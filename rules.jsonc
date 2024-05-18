@@ -252,6 +252,7 @@
                 "(?:%3F)?rb_clickid",
                 "(?:%3F)?s_cid",
                 "(?:%3F)?spm",
+                "(?:%3F)?srsltid", // https://support.google.com/analytics/answer/11479699?hl=en
                 "(?:%3F)?tracking_source",
                 "(?:%3F)?twclid",
                 "(?:%3F)?utm(?:_[a-z_]*)?",
