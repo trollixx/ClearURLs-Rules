@@ -1,0 +1,15 @@
+{
+    "devDependencies": {
+        "@biomejs/biome": "1.7.3",
+        "@types/bun": "latest"
+    },
+    "name": "clearurls-rules",
+    "module": "index.ts",
+    "type": "module",
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "bin": {
+        "biome": "@biomejs/biome"
+    }
+}

@@ -1,0 +1,5 @@
+# Autodetect text files
+* text=auto
+
+# Bun lockfile. See https://bun.sh/docs/install/lockfile
+*.lockb binary diff=lockb
