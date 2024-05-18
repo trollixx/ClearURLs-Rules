@@ -2672,10 +2672,10 @@
                 "mi_ign",
                 "mi_sc",
                 "mi_u",
-                "mi-key",
                 "sfalias",
                 "source",
                 "vfrom"
+                // "mi-key", // Required for email links.
             ],
             "referralMarketing": [],
             "rawRules": [],
