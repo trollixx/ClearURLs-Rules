@@ -217,14 +217,19 @@
             "urlPattern": ".*",
             "completeProvider": false,
             "rules": [
+                // HubSpot
                 "(?:%3F)?__hsfp",
                 "(?:%3F)?__hssc",
                 "(?:%3F)?__hstc",
+                "(?:%3F)?_hsenc",
+                "(?:%3F)?_hsmi",
+                "(?:%3F)?hsa_(?:[a-z_]+)?",
+                "(?:%3F)?hsCtaTracking",
+                // Other
                 "(?:%3F)?__s",
                 "(?:%3F)?__twitter_impression",
                 "(?:%3F)?_ga",
                 "(?:%3F)?_gl",
-                "(?:%3F)?_hsenc",
                 "(?:%3F)?_openstat",
                 "(?:%3F)?[a-z]?mc",
                 "(?:%3F)?action_(?:object|type|ref)_map",
@@ -238,7 +243,6 @@
                 "(?:%3F)?gclid",
                 "(?:%3F)?gs_l",
                 "(?:%3F)?hmb_(?:campaign|medium|source)",
-                "(?:%3F)?hsCtaTracking",
                 "(?:%3F)?itm_(?:campaign|medium|source)",
                 "(?:%3F)?mc_(?:eid|cid|tc)",
                 "(?:%3F)?mkt_tok",
