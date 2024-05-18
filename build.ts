@@ -12,7 +12,7 @@ type Provider = {
     forceRedirection?: boolean;
 };
 
-const rule_file = "data.min.json";
+const rule_file = "rules.jsonc";
 const minimized_file = "build/rules.min.json";
 
 const json = await Bun.file(rule_file).json();
