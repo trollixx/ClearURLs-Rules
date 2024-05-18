@@ -2662,6 +2662,26 @@
             "exceptions": [],
             "redirections": [],
             "forceRedirection": false
+        },
+        "homedepot.com": {
+            "urlPattern": "^https?:\\/\\/(?:[a-z0-9-]+\\.)*?homedepot\\.com",
+            "completeProvider": false,
+            "rules": [
+                "et_rid",
+                "mi_cmp",
+                "mi_ign",
+                "mi_sc",
+                "mi_u",
+                "mi-key",
+                "sfalias",
+                "source",
+                "vfrom"
+            ],
+            "referralMarketing": [],
+            "rawRules": [],
+            "exceptions": [],
+            "redirections": [],
+            "forceRedirection": false
         }
     }
 }
