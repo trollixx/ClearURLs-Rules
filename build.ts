@@ -1,6 +1,8 @@
 // Script to minimize rules JSON for publishing.
 // Docs: https://docs.clearurls.xyz/1.26.1/specs/rules/#dataminjson-catalog
 
+import JSON5 from "json5";
+
 type Provider = {
     urlPattern: string;
     completeProvider?: boolean;
@@ -15,7 +17,8 @@ type Provider = {
 const rule_file = "rules.jsonc";
 const minimized_file = "build/rules.min.json";
 
-const json = await Bun.file(rule_file).json();
+const blob = await Bun.file(rule_file).text();
+const json = JSON5.parse(blob);
 console.log("Loaded", Object.keys(json.providers).length, "rules.");
 
 const providers: { [key: string]: object } = {};
