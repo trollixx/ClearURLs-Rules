@@ -67,5 +67,15 @@ for (const key in json.providers) {
     providers[key] = pm;
 }
 
-const size = await Bun.write(minimized_file, JSON.stringify({ providers }));
+const buf = JSON.stringify({ providers });
+const size = await Bun.write(minimized_file, buf);
 console.log("Written", size, "bytes.");
+
+// Calculate checksum.
+const hasher = new Bun.CryptoHasher("sha256");
+hasher.update(buf);
+
+const sum = hasher.digest("hex");
+console.log("Checksum:", sum)
+
+await Bun.write(`${minimized_file}.hash`, sum);
