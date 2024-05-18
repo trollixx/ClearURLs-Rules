@@ -76,6 +76,6 @@ const hasher = new Bun.CryptoHasher("sha256");
 hasher.update(buf);
 
 const sum = hasher.digest("hex");
-console.log("Checksum:", sum)
+console.log("Checksum:", sum);
 
 await Bun.write(`${minimized_file}.hash`, sum);
