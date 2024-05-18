@@ -9,6 +9,10 @@
     "peerDependencies": {
         "typescript": "^5.0.0"
     },
+    "scripts": {
+        "biome:format": "bunx @biomejs/biome format --write .",
+        "biome:lint": "bunx @biomejs/biome lint ."
+    },
     "bin": {
         "biome": "@biomejs/biome"
     }
