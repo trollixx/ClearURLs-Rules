@@ -217,6 +217,9 @@
             "urlPattern": ".*",
             "completeProvider": false,
             "rules": [
+                // Coremetrics / Acoustic
+                // TODO: Research pr[1-15], pr_a[1-15] vn[1-15], tid, rnd.
+                "(?:%3F)?cm_(?:[a-z0-9_]+)?",
                 // HubSpot
                 "(?:%3F)?__hsfp",
                 "(?:%3F)?__hssc",
