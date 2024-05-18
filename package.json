@@ -10,6 +10,7 @@
         "typescript": "^5.0.0"
     },
     "scripts": {
+        "build": "bun build.ts",
         "biome:format": "bunx @biomejs/biome format --write .",
         "biome:lint": "bunx @biomejs/biome lint ."
     },
