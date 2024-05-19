@@ -221,6 +221,7 @@
                 // TODO: Research pr[1-15], pr_a[1-15] vn[1-15], tid, rnd.
                 "(?:%3F)?cm_(?:[a-z0-9_]+)?",
                 // HubSpot
+                // Reference: https://github.com/brave/brave-browser/issues/9019
                 "(?:%3F)?__hsfp",
                 "(?:%3F)?__hssc",
                 "(?:%3F)?__hstc",
@@ -228,6 +229,11 @@
                 "(?:%3F)?_hsmi",
                 "(?:%3F)?hsa_(?:[a-z_]+)?",
                 "(?:%3F)?hsCtaTracking",
+                // Salesforce Marketing Cloud
+                // Reference: https://github.com/brave/brave-browser/issues/37847
+                "et_cid",
+                "et_lid",
+                "et_rid",
                 // Other
                 "(?:%3F)?__s",
                 "(?:%3F)?__twitter_impression",
@@ -2667,7 +2673,7 @@
             "urlPattern": "^https?:\\/\\/(?:[a-z0-9-]+\\.)*?homedepot\\.com",
             "completeProvider": false,
             "rules": [
-                "et_rid",
+                // mi_ - Movable Ink?
                 "mi_cmp",
                 "mi_ign",
                 "mi_sc",
