@@ -2690,6 +2690,22 @@
             "exceptions": [],
             "redirections": [],
             "forceRedirection": false
+        },
+        "samsclub.com": {
+            "urlPattern": "^https?:\\/\\/(?:[a-z0-9-]+\\.)*?samsclub\\.com",
+            "completeProvider": false,
+            "rules": [
+                "mi_ecmp",
+                "mid",
+                "pid",
+                "smtrctid",
+                "xid"
+            ],
+            "referralMarketing": [],
+            "rawRules": [],
+            "exceptions": [],
+            "redirections": [],
+            "forceRedirection": false
         }
     }
 }
