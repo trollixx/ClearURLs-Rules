@@ -6,7 +6,16 @@ This repo contains extended set of rules for the extension, so I can update them
 
 ## Usage
 
-Use the following URLs in the extension settings:
+Use the following URLs in the extension settings.
 
-- URL of the `data.json` file: `https://trollixx.github.io/clearurls-rules/rules.min.json`
-- URL of the `rules.hash` file: `https://trollixx.github.io/clearurls-rules/rules.min.json.hash`
+URL of the `data.json` file:
+
+```text
+https://trollixx.github.io/clearurls-rules/rules.min.json
+```
+
+URL of the `rules.hash` file:
+
+```text
+https://trollixx.github.io/clearurls-rules/rules.min.json.hash
+```
